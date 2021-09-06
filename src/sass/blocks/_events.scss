@@ -1,0 +1,31 @@
+.events {
+	min-height: 675px;
+	padding: 60px 140px;
+	background: url('../img/events_bg.png') center / cover no-repeat;
+	&__inner {
+		margin-top: 50px;
+		display: grid;
+		grid-template-rows: minmax(auto, 475px);
+		grid-template-columns: repeat(2, 1fr);
+		align-content: start;
+		&_item {
+			display: flex;
+			justify-content: center;
+			&-img {
+			}	
+			&-text {
+				background: #000;
+			}
+		}
+	}
+	&__footer {
+		text-align: center;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 12px;
+		color: rgba(255, 255, 255, 0.5);
+		a {
+			color: $bg_color;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Banny';
+	src: local('Banny Round'), local('Banny-Round'),
+		 url('../fonts/Banny-Round.woff2') format('woff2'),
+		 url('../fonts/Banny-Round.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Banny';
+	src: local('Banny BoldRound'), local('Banny-BoldRound'),
+		 url('../fonts/Banny-BoldRound.woff2') format('woff2'),
+		 url('../fonts/Banny-BoldRound.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Banny';
+	src: local('Banny LightRound'), local('Banny-LightRound'),
+		 url('../fonts/Banny-LightRound.woff2') format('woff2'),
+		 url('../fonts/Banny-LightRound.woff') format('woff');
+	font-weight: lighter;
+	font-style: normal;
+	font-display: swap;
+}

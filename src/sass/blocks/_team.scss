@@ -1,0 +1,36 @@
+.team {
+	min-height: 675px;
+	padding: 60px 80px 100px 140px;
+	background: url('../img/team_bg.png') center / cover no-repeat;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		margin-top: 30px;
+	}	
+	&__descr {
+		text-align: center;
+		max-width: 600px;
+		margin-left: 80px;
+		&_text {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 28px;
+			color: #fff;
+			span {
+				display: inline-block;
+				font-weight: normal;
+				margin-top: 30px;
+			}
+		}
+	}
+	&__img {
+		position: relative;
+		&::after {
+			@include rectangle_left;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
+

@@ -1,0 +1,51 @@
+@import 'base/varmix';
+@import 'libs/bootstrap-reboot.min';
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	display: inline-block;
+	// 	left: 215px;
+	// 	bottom: 0;
+	// 	width: 1px;
+	// 	height: 90%;
+	// 	background-color: rgba($color: #fff, $alpha: 0.2);
+	// }
+}
+
+.titletext {
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.divider {
+	width: 61px;
+	height: 5px;
+	background: $main_color;
+	border-radius: 5px;
+	margin: 10px auto 30px auto;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/about';
+@import 'blocks/team';
+@import 'blocks/special';
+@import 'blocks/booking';
+@import 'blocks/menu';
+@import 'blocks/events';

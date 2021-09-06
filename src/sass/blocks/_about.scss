@@ -1,0 +1,34 @@
+.about {
+	min-height: 631px;
+	background-color: $bg_color;
+	padding: 78px 80px;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}	
+	&__descr {
+		text-align: center;
+		max-width: 600px;
+		&_text {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 28px;
+			color: #000000;
+			span {
+				display: inline-block;
+				font-weight: normal;
+				margin-top: 30px;
+			}
+		}
+	}
+	&__img {
+		position: relative;
+		margin-left: 80px;
+		&::after {
+			@include rectangle;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
