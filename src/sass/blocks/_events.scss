@@ -1,16 +1,54 @@
 .events {
 	min-height: 675px;
-	padding: 60px 140px;
+	padding: 60px 140px 40px 140px;
 	background: url('../img/events_bg.png') center / cover no-repeat;
-	&__inner {
-		margin-top: 50px;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 1fr;
-		column-gap: 80px;
-			
+	&__wrapper {
+		margin-top: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&_item {
+			margin: 0 40px;
+			max-width: 475px;
+			position: relative;
+			&-left:before {
+				@include rectangle_left_events;
+			}
+			&-right:after{
+				@include rectangle_events;
+			}
+			&-img {
+				width: 100%;
+			}
+			&-descr {
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				width: 80px;
+				padding: 20px;
+				background: #000;
+				margin-bottom: 0;
+				&-span {
+					display: inline-block;
+					font-family: 'Banny';
+					font-weight: bold;
+					font-size: 24px;
+					text-transform: uppercase;
+					color: #FFFFFF;
+					writing-mode: vertical-rl;
+					&_rev {
+						direction: rtl;
+					}
+				}
+				&_r {
+					left: 0;
+				}
+			}
+		}
 	}
 	&__footer {
+		margin-top: 70px;
 		text-align: center;
 		font-weight: normal;
 		font-size: 12px;
