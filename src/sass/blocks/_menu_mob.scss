@@ -1,0 +1,71 @@
+.menu_button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	span {
+		display: block;
+		height: 3px;
+		width: 100%;
+		background: $main_color;
+		margin: 2px;
+		border-radius: 1px;
+		transition: all 0.4s ease 0s;
+	}
+}
+.active .span {
+	&_top {
+		position: absolute;
+		transform: rotate(45deg);
+		left: 0;
+	}
+	&_middle {
+		transform: scale(0);
+	}
+	&_bottom {
+		position: absolute;
+		transform: rotate(-45deg);
+		left: 0;
+	}
+}
+.menumob {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	height: 100vh;
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.95);
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	z-index: 10;
+	&_active {
+		left: 0;
+	}
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	&__item {
+		font-size: 22px;
+		font-weight: bold;
+		font-family: 'Banny', serif;
+		color: $main_color;
+		&:hover {
+			text-decoration: none;
+			color: $main_color;
+		}
+	}
+}

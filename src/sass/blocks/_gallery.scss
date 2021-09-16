@@ -1,0 +1,17 @@
+.gallery {
+	min-height: 440px;
+	padding-top: 78px;
+	background-color: $bg_color;
+	&__wrapper {
+		margin: 0 auto;		
+	}
+	&__list {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+	&__item {
+		list-style-type: none;
+		width: 100%;
+	}
+}

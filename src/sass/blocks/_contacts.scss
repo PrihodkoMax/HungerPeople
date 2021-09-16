@@ -1,0 +1,56 @@
+.contacts {
+	min-height: 605px;
+	padding: 80px;
+	background-color: $bg_color;
+	&__descr {
+		text-align: center;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 28px;
+		color: #000000;
+	}
+	&__form {
+		margin-top: 50px;
+		display: grid;
+		grid-template-rows: 1fr 2fr 1fr;
+		grid-auto-rows: auto;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		input[name="name"] {
+			@include input_lg;
+		}
+		input[name="email"] {
+			@include input_lg;
+		}
+		input[name="phone"] {
+			@include input_lg;
+		}
+		textarea {
+			grid-column: 1 / 4;
+			resize: none;
+			@include input;
+			width: inherit;
+			height: 120px;
+		}
+		&_footer {
+			grid-column: 1 / 4;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&-item {
+				display: flex;
+				align-items: center;
+				font-weight: 700;
+				font-size: 12px;
+				padding: 5px;
+				img {
+					display: inline-block;
+					margin-right: 5px;
+				}
+				a {
+					color: rgba(51, 51, 51, 0.5);
+				}
+			}	
+		}
+	}
+}

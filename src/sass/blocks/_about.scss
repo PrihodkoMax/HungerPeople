@@ -5,6 +5,7 @@
 	&__wrapper {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 	}	
 	&__descr {
 		text-align: center;
@@ -26,9 +27,6 @@
 		margin-left: 80px;
 		&::after {
 			@include rectangle;
-		}
-		img {
-			width: 100%;
 		}
 	}
 }

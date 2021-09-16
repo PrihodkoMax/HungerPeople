@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<title>Hunger People</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,23 @@
 
 <body>
 	<header class="header">
+		<div class="menu_button">
+			<span class="span_top"></span>
+			<span class="span_middle"></span>
+			<span class="span_bottom"></span>
+		</div>
+		<nav class="menumob">
+			<ul class="menumob__list">
+				<li><a class="menumob__item" href="#">HOME</a></li>
+				<li><a class="menumob__item" href="#">ABOUT</a></li>
+				<li><a class="menumob__item" href="#">TEAM</a></li>
+				<li><a class="menumob__item" href="#">BOOKING</a></li>
+				<li><a class="menumob__item" href="#">MENU</a></li>
+				<li><a class="menumob__item" href="#">GALERIE</a></li>
+				<li><a class="menumob__item" href="#">EVENTS</a></li>
+				<li><a class="menumob__item" href="#">CONTACT</a></li>
+			</ul>
+		</nav>
 		<div class="container">
 			<div class="header__nav-wrapper">
 				<nav class="header__nav">
@@ -40,11 +57,11 @@
 				</div>
 				<div class="divider divider_main"></div>
 				<div class="header__btns">
-					<button class="button">BOOK TABLE</button>
-					<button class="button">EXPLORE</button>
+					<button class="button" onclick="document.location='#book_table'">BOOK TABLE</button>
+					<button class="button" onclick="document.location='#menu'">EXPLORE</button>
 				</div>
 				<div class="header__arrow">
-					<a href="#" class="header__arrow_link">
+					<a href="#about_us" class="header__arrow_link">
 						<img src="../src/icons/arrow.svg" alt="arrow"></a>
 				</div>
 			</div>
@@ -65,7 +82,7 @@
 		</div>
 	</header>
 
-	<section class="about">
+	<section class="about" id="about_us">
 		<div class="container">
 			<div class="about__wrapper">
 				<div class="about__descr">
@@ -106,19 +123,19 @@
 		</div>
 	</section>
 
-	<section class="booking">
+	<section class="booking" id="book_table">
 		<div class="container">
 			<div class="booking__wrapper">
 				<div class="booking__descr">
 					<div class="title">book a table</div>
 					<div class="divider"></div>
 					<form class="booking__descr_form">
-						<input name='name' type="text" class="booking__descr_form-input" placeholder="Name">
-						<input name='email' type="email" class="booking__descr_form-input" placeholder="Email">
-						<input name='phone' type="phone" class="booking__descr_form-input" placeholder="Phone">
-						<input name='people' type="text" class="booking__descr_form-input" placeholder="People">
-						<input name='date' type="date" class="booking__descr_form-input" placeholder="Date (mm/dd)">
-						<input name='time' type="text" class="booking__descr_form-input" placeholder="Time">
+						<input required name='name' type="text" class="booking__descr_form-input" placeholder="Name">
+						<input required name='email' type="email" class="booking__descr_form-input" placeholder="Email">
+						<input required name='phone' type="tel" class="booking__descr_form-input" placeholder="Phone">
+						<input required name='people' type="text" class="booking__descr_form-input" placeholder="People">
+						<input required name='date' type="date" class="booking__descr_form-input" placeholder="Date (mm/dd)">
+						<input required name='time' type="text" class="booking__descr_form-input" placeholder="Time">
 						<button class="button button_lg">BOOK NOW</button>
 					</form>
 				</div>
@@ -157,7 +174,7 @@
 		</div>
 	</section>
 
-	<section class="menu">
+	<section class="menu" id="menu">
 		<div class="container">
 			<div class="title">DELICIOUS MENU</div>
 			<div class="divider"></div>
@@ -330,6 +347,59 @@
 			<div class="events__footer">For private events please call: <a href="#">+40 729 131 637</a> / <a href="#">+40
 					726 458 782</a> or use the contact form.</div>
 		</div>
+	</section>
+
+	<section class="gallery">
+		<div class="container">
+			<div class="gallery__wrapper">
+				<ul class="gallery__list">
+					<li class="gallery__item"><img src="../src/img/Galery/Rectangle.png" alt="photo"></li>
+					<li class="gallery__item"><img src="../src/img/Galery/Rectangle (1).png" alt="photo1"></li>
+					<li class="gallery__item"><img src="../src/img/Galery/Rectangle (2).png" alt="photo2"></li>
+					<li class="gallery__item"><img src="../src/img/Galery/Rectangle (3).png" alt="photo3"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<div class="title">CONTACT</div>
+			<div class="divider"></div>
+			<div class="contacts__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis<br> at velit
+				maximus,
+				molestie est a, tempor magna.</div>
+			<form action="#" class="contacts__form">
+				<input required name="name" type="text" class="contacts__form_input" placeholder="Name">
+				<input required name="email" type="email" class="contacts__form_input" placeholder="Email">
+				<input required name="phone" type="tel" class="contacts__form_input" placeholder="Phone">
+				<textarea required class="contacts__form_input" name="message" placeholder="Message"></textarea>
+				<div class="contacts__form_footer">
+					<div class="contacts__form_footer-item">
+						<img src="../src/icons/location2.svg" alt="map">
+						<a href="#">5th London Boulevard, U.K.</a>
+					</div>
+					<div class="contacts__form_footer-item">
+						<img src="../src/icons/phone.svg" alt="phone">
+						<a href="#">+40 729 131 637/+40 726 458 782</a>
+					</div>
+					<div class="contacts__form_footer-item">
+						<img src="../src/icons/envelop.svg" alt="email">
+						<a href="#">office@mindblister.com</a>
+					</div>
+					<button class="button button_lg50">SEND MESSAGE</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div>
+			<iframe class="footer__iframe"
+				src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2482.1079131745714!2d-0.21365438406536943!3d51.52958051690193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s5th%20London%20Boulevard%2C%20U.K.!5e0!3m2!1sen!2sua!4v1631695523143!5m2!1sen!2sua"
+				allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div class="footer__descr"><span>© Copyright Mindblister 2019</span></div>
 	</section>
 	<script src="js/script.js"></script>
 </body>

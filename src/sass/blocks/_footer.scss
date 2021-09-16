@@ -1,0 +1,22 @@
+.footer {
+	min-height: 575px;
+	&__iframe {
+		width: 100%;
+		min-height: 475px;
+		border: none;
+	}
+	&__descr {
+		min-height: 100px;
+		background: rgba(0, 0, 0, 0.9);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		span {
+			display: inline-block;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 12px;
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+}

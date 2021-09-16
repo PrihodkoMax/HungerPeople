@@ -9,16 +9,6 @@
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
-	// &::before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	display: inline-block;
-	// 	left: 215px;
-	// 	bottom: 0;
-	// 	width: 1px;
-	// 	height: 90%;
-	// 	background-color: rgba($color: #fff, $alpha: 0.2);
-	// }
 }
 
 .titletext {
@@ -49,3 +39,8 @@
 @import 'blocks/booking';
 @import 'blocks/menu';
 @import 'blocks/events';
+@import 'blocks/gallery';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/menu_mob';
+@import 'blocks/media';
