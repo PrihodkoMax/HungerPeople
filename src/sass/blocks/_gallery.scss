@@ -1,17 +1,34 @@
 .gallery {
-	min-height: 440px;
 	padding-top: 78px;
 	background-color: $bg_color;
 	&__wrapper {
-		margin: 0 auto;		
+		margin: 0 auto;
+		max-width: 970px;	
+		@media (max-width:992px){
+			max-width: 720px;
+		}	
 	}
 	&__list {
 		display: flex;
+		justify-content: center;
 		margin: 0;
 		padding: 0;
+		@media (max-width:992px){
+			flex-wrap: wrap;
+		}
 	}
 	&__item {
 		list-style-type: none;
-		width: 100%;
+		flex: 0 1 25%;
+		@media (max-width:992px){
+			flex: 0 1 50%;
+		}
+		@media (max-width:767px){
+			flex: 0 1 auto;
+		}
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
 	}
 }

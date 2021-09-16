@@ -1,5 +1,4 @@
 .events {
-	min-height: 675px;
 	padding: 60px 140px 40px 140px;
 	background: url('../img/events_bg.png') center / cover no-repeat;
 	&__wrapper {
@@ -11,6 +10,7 @@
 			margin: 0 40px;
 			max-width: 475px;
 			position: relative;
+			// flex: 0 1 50%;
 			&-left:before {
 				@include rectangle_left_events;
 			}
@@ -18,7 +18,7 @@
 				@include rectangle_events;
 			}
 			&-img {
-				width: 100%;
+				max-width: 100%;
 			}
 			&-descr {
 				position: absolute;

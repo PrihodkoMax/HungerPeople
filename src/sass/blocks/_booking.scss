@@ -1,15 +1,15 @@
 .booking {
-	min-height: 631px;
 	background-color: $bg_color;
 	padding: 78px 80px;
 	&__wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: center;
 	}	
 	&__descr {
 		text-align: center;
 		max-width: 600px;
+		margin: 0px 80px 0px 0px;
 		&_form {
 			display: grid;
 			grid-template-rows: repeat(4, 1fr);
@@ -25,12 +25,11 @@
 	}
 	&__img {
 		position: relative;
-		margin-left: 40px;
 		&::after {
 			@include rectangle;
 		}
 		img {
-			width: 100%;
+			max-width: 100%;
 		}
 	}
 	&__footer {
